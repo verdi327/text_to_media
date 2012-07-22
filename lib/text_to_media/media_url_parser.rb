@@ -1,4 +1,5 @@
 class MediaUrlParser
+  EMBEDLY_KEY = "9e226384957f11e1bf614040aae4d8c9"
   URL_REGEX = /http[s]?:\/\/\S+\.(?:com|net|org|biz|in|co|info|gov|ly|me|im)(?:\?.*)?\S{1,}/i
   attr_accessor :original_string, :html, :url, :has_url
 
