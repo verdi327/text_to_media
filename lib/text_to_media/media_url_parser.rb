@@ -37,7 +37,7 @@ class MediaUrlParser
     when 'video'
       self.html = result.html
     else
-      self.html = "N/A"
+      self.html = "<p>Unable to find content for url<p>"
     end
   end
 end
