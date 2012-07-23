@@ -38,7 +38,7 @@ class MediaUrlParser
     result = embedly_response
     case result.type
     when 'link'
-      self.html = "<a href=#{result.url} target="_blank">#{self.url.gsub(/http[s]?:\/\//, '')}</a>"
+      self.html = "<a href=#{result.url} target='_blank'>#{self.url.gsub(/http[s]?:\/\//, '')}</a>"
     when 'photo'
       self.html = "<img src='#{result.url}'/>"
     when 'video'
